@@ -1,0 +1,105 @@
+{
+  "module": [
+    {
+      "name": "Dashboard",
+      "iconUrl": "Home",
+      "targetUrl": "/SuperAdmin/dashboard",
+      "routeName": "users",
+      "role": ["superadmin"],
+       "subModulesResponse": []
+    },
+
+    {
+      "name": "Navigation",
+      "iconUrl": "User",
+      "targetUrl": "/SuperAdmin/navigation",
+      "routeName": "users",
+      "role": ["developeruser", "superadmin"],
+      "subModulesResponse": [
+        {
+          "name": "Modules",
+          "iconUrl": "User",
+          "targetUrl": "/SuperAdmin/navigation/modules",
+          "routeName": "users",
+          "role": ["superadmin"]
+        },
+        {
+          "name": "SubModules",
+          "iconUrl": "User",
+          "targetUrl": "/SuperAdmin/navigation/subModules",
+          "routeName": "users",
+          "role": ["superadmin"]
+        },
+        {
+          "name": "Menus",
+          "iconUrl": "User",
+          "targetUrl": "/SuperAdmin/navigation/menu",
+          "routeName": "users",
+          "role": ["superadmin"]
+        }
+      ]
+    },
+    {
+      "name": "Access Control",
+      "iconUrl": "ShieldCheck",
+      "targetUrl": "/admin/accessControl",
+      "routeName": "user",
+      "role": ["superadmin"],
+      "subModulesResponse": [
+        {
+          "name": "Users",
+          "iconUrl": "User",
+          "targetUrl": "/SuperAdmin/accessControl/user",
+          "routeName": "users",
+          "role": ["superadmin"]
+        },
+        {
+          "name": "Roles",
+          "iconUrl": "User",
+          "targetUrl": "/SuperAdmin/accessControl/roles",
+          "routeName": "users",
+          "role": ["superadmin"]
+        },
+        {
+          "name": "RolePermission",
+          "iconUrl": "User",
+          "targetUrl": "/SuperAdmin/accessControl/RolePermission",
+          "routeName": "users",
+          "role": ["superadmin"]
+        }
+      ]
+    },
+    {
+      "name": "Institution SetUp",
+      "iconUrl": "ShieldCheck",
+      "targetUrl": "/SuperAdmin/institutionSetup",
+      "routeName": "institution",
+      "role": ["superadmin"],
+      "subModulesResponse": [
+        {
+          "name": "Institution",
+          "iconUrl": "User",
+          "targetUrl": "/SuperAdmin/institutionSetup/Institution",
+          "routeName": "users",
+          "role": ["superadmin"]
+        }
+      ]
+    },
+    {
+      "name": "Company SetUp",
+      "iconUrl": "Shool",
+      "targetUrl": "/SuperAdmin/company",
+      "routeName": "company",
+      "role": ["superadmins"],
+      "subModulesResponse": [
+        {
+          "name": "Company",
+          "iconUrl": "User",
+          "targetUrl": "/Admin/company/all-company",
+          "routeName": "users",
+          "role": ["superadmins"]
+        }
+      ]
+    }
+  ]
+}
